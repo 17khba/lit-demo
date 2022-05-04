@@ -1,0 +1,26 @@
+{
+  "name": "rss-list",
+  "private": false,
+  "version": "0.1.4",
+  "main": "dist/rss-list.es.js",
+  "exports": {
+    ".": "./dist/rss-list.es.js"
+  },
+  "types": "types/rss-list.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "deploy": "npm run build && npm publish"
+  },
+  "dependencies": {
+    "lit": "^2.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "vite": "^2.9.7"
+  }
+}
