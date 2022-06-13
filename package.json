@@ -1,7 +1,7 @@
 {
   "name": "rss-list",
   "private": false,
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/rss-list.es.js",
   "exports": {
     ".": "./dist/rss-list.es.js"
@@ -14,7 +14,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "deploy": "npm run build && npm publish"
+    "release:patch": "npm version patch --force",
+    "release:minor": "npm version minor --force",
+    "release:major": "npm version major --force",
+    "deploy": "npm run release:patch && npm run build && npm publish"
   },
   "dependencies": {
     "lit": "^2.2.3"
